@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
 
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp">
     <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="382dp"
-            android:layout_height="679dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp">
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="wrap_content" app:srcCompat="@drawable/ozzy_icon"
-                    android:id="@+id/imageView2" android:layout_weight="1"/>
-            <TextView
-                    android:text="Число"
-                    android:layout_width="wrap_content"
-                    android:layout_height="101dp" android:id="@+id/textView" android:layout_weight="1"
-                    android:textSize="24sp" android:textAlignment="center"/>
-        </LinearLayout>
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ozzy_icon"
+                android:id="@+id/imageView2" android:layout_weight="1"/>
+        <TextView
+                android:text="Число"
+                android:layout_width="303dp"
+                android:layout_height="match_parent" android:id="@+id/num" android:layout_weight="1"
+                android:textStyle="bold|italic" android:textSize="18sp" android:textAlignment="center"/>
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
